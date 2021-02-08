@@ -2,8 +2,17 @@
   "name": "untitled",
   "version": "1.0.0",
   "main": "index.js",
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "scripts": {
-    "lint": "npx eslint .",
     "start": "nodemon --watch apis --delay 1 --exec 'ts-node' src/index.ts"
   },
   "keywords": [],
