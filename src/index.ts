@@ -4,7 +4,7 @@ import { config as configEnv } from 'dotenv';
 function startServer() {
   const app = express();
   configEnv();
-
+  
   app.use(express.json());
 
 

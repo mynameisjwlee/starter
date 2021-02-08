@@ -2,18 +2,6 @@
   "name": "untitled",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "**/*.ts": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "scripts": {
     "start": "nodemon --watch apis --delay 1 --exec 'ts-node' src/index.ts"
   },
