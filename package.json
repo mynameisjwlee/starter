@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "lint": "npx eslint .",
     "start": "nodemon --watch apis --delay 1 --exec 'ts-node' src/index.ts"
   },
   "keywords": [],
